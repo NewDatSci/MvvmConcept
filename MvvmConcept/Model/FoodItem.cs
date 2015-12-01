@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.ComponentModel;
+using MvvmConcept.Helpers
 
 namespace MvvmConcept.Model
 {
@@ -49,6 +50,12 @@ namespace MvvmConcept.Model
             }
         }
 
+        private RelayCommand _refreshCommand;
+
+        public RelayCommand RefreshCommand
+        {
+
+        }
 
         public event PropertyChangedEventHandler PropertyChanged;
 

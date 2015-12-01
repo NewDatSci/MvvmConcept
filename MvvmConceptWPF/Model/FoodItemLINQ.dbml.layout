@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="FoodItemLINQ">
+  <DataContextMoniker Name="/FoodItemLINQDataContext" />
+  <nestedChildShapes>
+    <classShape Id="78d09a5f-77de-47b5-adaa-1c590e03257f" absoluteBounds="1.875, 3.75, 2, 1.1939925130208333">
+      <DataClassMoniker Name="/FoodItemLINQDataContext/CategorisedItem" />
+      <nestedChildShapes>
+        <elementListCompartment Id="911c1017-e8f2-43cc-beed-ed0922418bbd" absoluteBounds="1.8900000000000001, 4.21, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="0f9b52b5-bfbf-43b5-8a7e-6e825cc6940f" absoluteBounds="2.625, 2, 2, 1.1939925130208333">
+      <DataClassMoniker Name="/FoodItemLINQDataContext/Category" />
+      <nestedChildShapes>
+        <elementListCompartment Id="d168b36d-78d9-44eb-bc53-cf0b7d08f249" absoluteBounds="2.64, 2.46, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(3.25 : 3.19399251302083); (3.25 : 3.75)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/FoodItemLINQDataContext/Category/Category_CategorisedItem" />
+      <nodes>
+        <classShapeMoniker Id="0f9b52b5-bfbf-43b5-8a7e-6e825cc6940f" />
+        <classShapeMoniker Id="78d09a5f-77de-47b5-adaa-1c590e03257f" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="7446c323-355f-42f1-b9ed-f2ea430efef5" absoluteBounds="0.5, 0.75, 2, 2.7324039713541666">
+      <DataClassMoniker Name="/FoodItemLINQDataContext/MenuItem" />
+      <nestedChildShapes>
+        <elementListCompartment Id="ff46db48-89c1-4f68-b6d1-c7d0eb6b5617" absoluteBounds="0.51499999999999968, 1.21, 1.9700000000000002, 2.1724039713541665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(2.1875 : 3.48240397135417); (2.1875 : 3.75)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/FoodItemLINQDataContext/MenuItem/MenuItem_CategorisedItem" />
+      <nodes>
+        <classShapeMoniker Id="7446c323-355f-42f1-b9ed-f2ea430efef5" />
+        <classShapeMoniker Id="78d09a5f-77de-47b5-adaa-1c590e03257f" />
+      </nodes>
+    </associationConnector>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>

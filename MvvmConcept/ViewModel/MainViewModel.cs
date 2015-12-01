@@ -7,6 +7,7 @@ using System.ComponentModel;
 using System.Collections.ObjectModel;
 using MvvmConcept.Model;
 
+
 namespace MvvmConcept.ViewModel
 {
     public class MainViewModel:INotifyPropertyChanged
@@ -20,9 +21,7 @@ namespace MvvmConcept.ViewModel
             private set;
         }
 
-        private 
-
-        public MainViewModel( IFoodItemsService dataService)
+        public MainViewModel(IFoodItemsService dataService)
         {
             _dataService = dataService;
             FoodItems = new ObservableCollection<FoodItem>();
@@ -46,6 +45,8 @@ namespace MvvmConcept.ViewModel
                 RaisePropertyChanged("SelectedFoodItem");
             }
         }
+
+
 
         public event PropertyChangedEventHandler PropertyChanged;
 
